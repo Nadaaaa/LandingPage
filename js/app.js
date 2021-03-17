@@ -38,6 +38,9 @@ function removeAllActiveClasses() {
     sectionsLinks.forEach(item => {
         item.classList.remove('active');
     })
+    sections.forEach(item => {
+        item.classList.remove('your-active-class');
+    })
 }
 
 function addActiveClass(id) {
@@ -58,6 +61,7 @@ function addActiveClass(id) {
         element = document.getElementById('nav_sec4');
     }
     element.classList.add("active");
+    document.getElementById(id).classList.add("your-active-class");
 }
 /* End Helper Functions */
 
